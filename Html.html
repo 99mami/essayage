@@ -1,0 +1,208 @@
+<!Doctype.html>
+
+<html>
+     <head>
+           <title> Essayage de coder en html</title>
+           <meta charset="utf-8">
+           <link rel="stylesheet" href="C:\Users\aissa\Documents\style.css">
+           <meta name="description" content="Free Web tutorials">
+     </head>
+
+         <body> 
+                <h1> Ce que j'ai retenu en HTML! </h1>
+                <h2> Lire en l'envers</h2>
+                <p> Le meta <strong>name</strong> et <strong>content</strong> dans <em>head</em> attribut "names" (en anglais). Et j'ai constaté qu'en
+                        écrivant ce code avant le link de css fait que y'aura pas de linkage entre le code html et le code css, on doit l'écrire aprés 
+                       le link css dans head.
+                </p>
+
+                <p> target permet d'ouvrir le link sur une nouvelle fenetre</p>
+
+                <p class="changement"> le type <strong>class</strong> permet de changer au niveau de  css un seul paragraphe avec le nom donné comme ça ttes les autres 
+                                   paragraphes resteront inchangés
+               </p>
+      
+                <p class= "opacity"> on utilise opacity pour changer la transparence d'un element</p>
+                
+                <p> <strong> target</strong> avec <strong> "BLANK"</strong> permet d'ouvrir le link sur une nouvelle fenetre exemple les links suivants: </p>
+
+                <a href=" https://www.code-couleur.com/" target= "BLANK">Code_couleur</a>
+                 <br>
+
+                 <a href= "https://www.gigroup.it" target="BLANK"> Mami </a>
+                 <br>
+
+                 <p> Création des link pour linker des webpages de meme file html exemples:</p>
+
+                 <a href="C:\Users\aissa\Documents\index.html" target="BLANK">Linking_page pour aller a index</a>
+                 <br>
+
+                 <img src="C:\Users\aissa\OneDrive\Immagini\mm.jpg" width = "100" height = "100">
+                 <br>
+
+                 <img src="C:\Users\aissa\OneDrive\Immagini\We can.jpg" width="100" height="100">
+                 <br>
+
+                 <button><em> pour ecrire en italique on utilise em :emphasis.</em></button>
+
+                 <button><strong> ecrire en gras on utilise strong</strong></button>
+                 <br>
+
+                 <p> Il y'a differents "type" e "placeholder" d'input qui est un "empty tag":</p>
+                          <ul> 
+                            pour les types :
+                            <li> checkbox</li>
+                            <li> text</li>
+                            <li> range</li>
+                            <li> color</li>
+                            et pour les placeholder:
+                            <li> password</li>
+                            <li> Email</li>
+                            Il y'a aussi la propriété "value" qui va avec le type text.
+
+                          </ul>
+
+                          <p> Par exemple:</p>   
+             
+                               <input type="checkbox">
+                               <input type = " text" value = "MAMI">
+                               <input type ="range">
+                               <input type = "color">
+                               <input placeholder="Email">
+                               <input placeholder="Password" type="password">
+                               <br>
+
+                  <button> <strong> Subscribe </strong> </button>
+
+                   <p> La propriété <strong> transform</strong> avec la fonction <strong> rotate() en degrés</strong> permettent de transformer l'image 
+                           ou un element de html en rotation d'un certain numéro en degrés. Pour tourner un element "counterclockwise" on utile
+                            un signe moins(-) 
+                 </p>
+
+                <p> <strong>Filter</strong> est une propriété de css qui peut changer la visualisation de l'image soit floue avec la fonction <em>blur()</em> en <em>px</em>
+                            et la fonction <em>opacity()</em> en<em> % </em>, quand on code 100% dans la fonction <em>opacity() </em> l'element devient complétement
+                            visible. La fonction <em>grayscale() </em> en <em>%</em>.
+               </p>
+                         <h3> LES FLEXBOX</h3>
+
+                <p> La propriété de css <strong>display: flex;</strong> qui veut dire flexbox permet d'aligner sur une meme ligne tous les elements par exemple "div items" 
+                         à l'intérieur d'un tag "div" avec un " class = container". Exemple:
+             </p>
+                <div class = "container" >
+                    <div class =" item"> Ce texte est contenu dans la cage</div>
+                   <div class ="item"> contenu dans la cage</div>
+                   <div class = "item"> contenu aussi</div>
+               </div>
+             <p>
+                   Avec " flex" dés fois si le mot ou la phrase du class item est trop longue il peut sortir de la cage... Pour controler la direction 
+                  du flexbox ( soit horizontale  ou verticale) on utilise la propriété <em> flex-direction</em> avec les valeurs(value) "row"(pour la direction
+                  horizontale) et "column"(pour celle verticale). Mais sa valeur originale est " row". Il y'a d'autres valeurs aussi comme "row-reverse" 
+                 (qui est horizontale mais part de la droite vers la gauche) et " column-reverse" ( verticale de bas en haut)
+           </p>
+ 
+                 <h3> FLEXBOX AXES</h3>
+
+          <p>
+                        Le "cross axis" est une ligne imaginaire perpendiculaire à l'axe de la "main"( l'axe originale). Si on met la valeur "row" ou "row-reverse" à la "flex-direction"
+                        le "cross axis" est vertical et commence vers le haut, mais si c'est la valeur " column" ou "column-reverse" le "cross axis" est horizontal 
+                       et commence vers la gauche. On le trouve le plus souvent quand on met à la classe item un height ou un weight.
+        </p>
+
+                   <h3> JUSTIFY-CONTENT</h3>
+
+       <p>
+                        <em>justify-content</em> est une propriété qui permet de justifier les "flex items". Permet aussi de changer comment les éléments sont groupès et 
+                         spacès. Sa valeur originale est "flex-start" qui signifie que tous les elements sont groupès ensemble au commencement de la cage (container) soit 
+                          de gauche à droite(row) ou de haut en bas(column). Il y'a aussi la valeur "flex-end" qui groupe tous les elements(items) à la fin de la cage
+                           (container) soit de droite à gauche ou de bas en haut. La valeur " center" permet de centrer les elements. Pour espacer chaque element dans la cage on utilise
+                            " space-around". Il y'a aussi la valeur " space-between"
+     </p>
+
+                          <h3> ALIGN-ITEMS</h3>
+
+                              <p>
+                                       pour aligner les éléments "items" tout au long du "cross axis" qui est differente de l'axe original on utilise <em> align-items</em>. 
+                                       sa valeur originale est "stretch". Il y'a aussi la valeur "flex-start", " flex-end", "center".
+                           </p>
+
+                          <p>
+                                 Overflow des elements horizontale dans une cage "container" on utilise <em> flex-wrap</em>. Sa valeur originale est "nowrap" . 
+                                  Il y'a aussi la valeur "wrap", "wrap-reverse". Il y'a la propriete <em> align-content</em> , qui a "stretch" comme valeur originale.
+                                   On trouve aussi les values "flex-start", "flex-end", "center", "space-around", "space-between". La propriete <em> flex-basis</em> 
+                                    pour changer le size des flex items. La valeur originale est "auto" avec unite px et %. La propriete <em> flex-grow</em>, sa valeur 
+                                     originale est egale à 0.
+                                     Il y'a aussi la valeur 1, 2, etc... C'est un element de item.
+                                     Pour retrecir les elements "items" dans la cage "container" on utilise la propriete <em> flex-shrink</em>, et sa valeur 
+                                     originale est 1. Pour combiner flex-grow, flex-shrink et flex-basis on utilise seulement la propriete <em> flex</em>
+                                     avec les valeurs comme: "flex: 0 1 auto", c'est une propriete d'item .
+                       </p>
+
+                                      <h3> CREATING A CSS GRID</h3>
+
+                            <p>  
+                                   - CSS grid est un système de mise en page qui nous permet d'ajouter des éléments à la fois horizontalement et verticalement sur une page Web
+                                     <br>
+                                   - Pour utiliser CSS GRID, on doit créer en premier un parent élément avec la classe <em> grid-container</em>, es: div class = "grid-container". 
+                                      <br>
+                                   -  Pour les éléments  on utilise la classe " grid-item". 
+                                    <br>
+                                   - Pour le coder on utilise en CSS la propriete <strong> display</strong> avec la valeur <strong>grid</strong> dans la classe conteneur  ( container).
+                          </p>  
+                                            <h3> CREATING GRID COLUMNS: </h3>
+                         <p>
+                                   - Pour les colonnes on a la propriete <strong>grid-template-columns</strong>  avec l'unitè en <em>px</em>  qui est l'unite fixe. 
+                                       <br>
+                                   -  Les unités du <strong>Grid-template-columns </strong>: 50px 50px 120px ou auto, il y'a aussi son unité spécial <em>fr(fractional unit)</em>, on peut les coder  tous ensemble.
+                                        <br>
+                                   -  Les éléments de la grille sont affichés en fonction du nombre de colonnes. s'il y a plus d'éléments que de colonnes, les éléments supplémentaires seront mis
+                                        vers la ligne suivante. En mettant la valeur <em> auto</em> à la propriété <strong> grid-template-columns</strong> les èléments de la grille seront espacés.
+                                            <br>
+                                   - La valeur <em> fr : fractional unit<em> répartit l'espace disponible du conteneur (container)  en fractions. Si on fait la combination de <em>fr</em> avec d'autres 
+                                          unité comme <em> px</em> l'espace laissé aprés l'èlément qui à l'unité <em> px</em> est la meme chose distribué en fractions.
+                                        <br>
+                                   - La valeur de la grille  <em>repeat () </em> est un raccourci  pour définir des colonnes rapidement et  c'est une fonction . Ex: repeat(3, 1fr) -> 3 columns avec chacun 1fr.
+                    </p>
+
+                   <p> Exemple: sudoku puzzle </p>
+
+                          <div class = "grid-container" >
+                                 <div class ="grid-item"> 1 </div>
+                                 <div class = " grid-item"> </div>
+                                 <div class = " grid-item"> 3</div>
+                                 <div class ="grid-item"> 2</div>
+                                 <div class ="grid-item"> </div>
+                                 <div class ="grid-item"> </div>
+                                 <div class ="grid-item"> </div>
+                                 <div class ="grid-item"> </div>
+                                 <div class ="grid-item"> 1</div>
+                          </div>
+
+                                  <h3> CREATING GRID ROWS:</h3>
+                         <p>
+                                -ON utilise la propriété <strong> grid-template-rows</strong> pour coder les grilles en ligne (contraire de colonne). Son unité fixe est <em> pixels(px)</em>
+                                     si on a moins d'éléments de grille (grid items) que les lignes, nous aurons des lignes vides. On a aussi l'unité  %, on peut aussi
+                                     utilisé( en combinant ) fr et px, il existe la valeur auto, la fonction repeat aussi.
+                        </p>
+                      
+                                  <h3>DEFINING GRID COLUMNS AND ROWS</h3>
+                       <p>On utilise la propriété <strong> grid-template </strong>  pour définir  que ça soit les grilles en lignes qu'en colonnes.
+                               Pour la coder en css la valeur à gauche du slash sont les lignes et ceux à droite du slash sont les colonnes, ici aussi
+                               on peut combiner les unités px et fr ( par exemple on peut ajuster les éléments avec la dimension du container en 
+                               mettant : 50px 50px/ 1fr 1fr  ou l'inverse), et les autres unités aussi comme % et auto
+                      </p>
+                                   <p> FORM e LABEL a voir, commenti in html on utilise les signes superieurs suivi d'un point d'exclamation et signes inferieurs  </p>
+                                   <p> On utilise "SPAN" pour dire combien on expande un grid-item.</p>
+                                    <p> faisant  "SPAN 2" signifie qu'on expande le grid-item attraversant les colonnes</p>
+
+                                   <h3> SECTION USING NAMED AREAS</h3>
+                                        <p> On l'utilise pour creer des sections,  on doit premierement donner un nom aux description des elements( item) de la grille
+                                                 par exple(main).
+                                                  Pour le donner un nom on doit utiliser la propriete <strong> grid-area</strong>.
+                                                  Et apres avoir eu le nom( named areas)  maintenant on peut creer des sections en  separant le contenu en colonnes et lignes(rows)
+                                                  par exemple( on peut utiliser la propriete <strong> grid-template-areas : " sidebar main"</strong>.
+                                                   Pour mettre les lignes entres les colonnes ( les colonnes couvrant les lignes) on couvre leurs named areas à travers chaque colonne.
+                                                   Pour mettre le header span( c'est une section) à travers la largeur de toute la page on utilise <strong> grid-template-areas. " header header" </strong>.
+                                                   Pour creer la section  bas de page(footer) on utilise footer comme dans header. CSS peut aussi coder d'autres formes de designs.
+                                                   Pour utiliser un element de la grille dans deux lignes, on le code deux fois dans la propriete
+          </body>
+</html>
